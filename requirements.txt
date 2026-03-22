@@ -1,0 +1,30 @@
+# Core ML
+torch>=2.0.0
+transformers>=4.38.0
+sentence-transformers>=2.6.0
+
+# Data
+datasets>=2.18.0
+pandas>=2.0.0
+numpy>=1.24.0
+
+# arXiv API
+arxiv>=2.1.0
+
+# Similarity search
+scikit-learn>=1.3.0
+faiss-cpu>=1.7.4
+
+# Config & utilities
+pyyaml>=6.0
+python-dotenv>=1.0.0
+tqdm>=4.66.0
+requests>=2.31.0
+
+# Evaluation
+rouge-score>=0.1.2
+
+# Testing
+pytest>=7.4.0
+
+gradio~=6.9.0

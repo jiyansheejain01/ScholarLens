@@ -1,0 +1,42 @@
+# ── Model settings ──────────────────────────────────────
+model:
+  name: "allenai/scibert_scivocab_uncased"
+  max_length: 512
+  batch_size: 8
+  device: "cpu"
+
+# ── arXiv search settings ────────────────────────────────
+arxiv:
+  months_back: 6
+  max_results: 50
+  categories:
+    - "cs.AI"
+    - "cs.LG"
+    - "cs.CL"
+    - "stat.ML"
+
+# ── Citation ranking settings ────────────────────────────
+ranking:
+  top_k: 10
+  similarity_threshold: 0.75
+
+# ── Quality assessment settings ──────────────────────────
+quality:
+  min_score: 0.0
+  max_score: 1.0
+  weights:
+    coherence: 0.4
+    completeness: 0.3
+    novelty: 0.3
+
+# ── Data paths ───────────────────────────────────────────
+paths:
+  raw_data: "data/raw/"
+  processed_data: "data/processed/"
+  embeddings: "data/embeddings/"
+  results: "data/results/"
+
+# ── Evaluation settings ──────────────────────────────────
+evaluation:
+  metric: "citation_recall"
+  test_split: 0.2
